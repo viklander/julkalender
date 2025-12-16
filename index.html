@@ -257,7 +257,7 @@ function hasLeaderAccess() {
 function getTodayDay() {
   const now = new Date();
   let m = now.getMonth() + 1;
-  let d = now.getDate();
+  let d = now.getDate() + 1;
   if (m !== 12) return 24;   // utanför december → allt öppet
   if (d < 1) return 1;
   if (d > 24) return 24;
@@ -533,6 +533,7 @@ document.addEventListener('keydown', (e)=>{
 </script>
 </body>
 </html>
+
 
 
 
